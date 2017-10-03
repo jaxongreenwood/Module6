@@ -3,5 +3,7 @@ project(Module6)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES Array.cpp)
+#set(SOURCE_FILES Array.cpp)
+set(SOURCE_FILES FuncArray.cpp)
+#set(SOURCE_FILES MultiDArray.cpp)
 add_executable(Module6 ${SOURCE_FILES})

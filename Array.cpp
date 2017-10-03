@@ -2,11 +2,13 @@
 using namespace std;
 const int SIZE = 3;
 
+
+
+
 int main() {
     // define a array of three integers
     int age[SIZE];
-    float amount;
-    float total;
+
 
     // take input
     for(int i = 0; i < SIZE; i++){
@@ -15,7 +17,7 @@ int main() {
     }
 
     for(int i = 0; i < SIZE; i++){
-        cout << "\nAge of i is:" << age[i];
+        cout << "\nAge of i is: " << age[i];
     }
 
     cout << "\nDone!" << endl;
