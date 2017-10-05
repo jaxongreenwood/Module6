@@ -4,6 +4,7 @@
 // Copyright (c) 2017 WSU
 //
 #include <iostream>
+#include <string>
 using namespace std;
 
 // Constants
@@ -11,6 +12,7 @@ struct Part{
     int modelNum;
     int partNum;
     float cost;
+    string partName;
 };
 const int SIZE = 4;
 void partInput(struct Part pi[SIZE]);
@@ -34,13 +36,18 @@ int main(void) {
 void partInput(struct Part pi[SIZE]){
 
     for(int i = 0; i < SIZE; i++){
+        cout << "Enter part name: ";
+        getline(cin, pi[i].partName);
+
+        // I need to flush my input
+
         cout << "Enter model number: ";
         cin >> pi[i].modelNum;
 
-        cout << "Enter part number: ";
+        cout << "\nEnter part number: ";
         cin >> pi[i].partNum;
 
-        cout << "Enter part cost: ";
+        cout << "\nEnter part cost: ";
         cin >> pi[i].cost;
         cout << endl;
     }
